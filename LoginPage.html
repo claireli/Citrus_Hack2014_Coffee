@@ -1,0 +1,37 @@
+<html>
+	<div id="slide">
+		<form action="Login.php" method="get">
+			<label for="name">Username:</label><input type="text" id="input" name="usr"><br>
+			<label for="password">Password:</label><input type="password" id="input" name="pw"><br>
+		    <label>&nbsp; </label><input type="submit" value="Submit"id="button"><input type="submit" value="Cancel" id="button" /><br>
+		</form>
+	</div>
+</html>
+
+<style>
+	#input{
+		border:2px solid #006;
+		background:#ffc;
+	}
+	#input:hover{
+		border:1px solid #006;
+		background: #ffb;
+	}
+	#button{
+		border:2px solid #006;
+		background:#xffc;
+	}
+	#button:hover{
+		border:none;
+		padding: 2px 8px;
+		background: #xff6
+	}
+	label{
+		display: block;
+		width: 150px;
+		float: left;
+		margin: 2px 4px 6px 4px;
+		text-align: right;
+	}
+	br{clear:left;}
+</style>

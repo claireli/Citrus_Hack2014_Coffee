@@ -1,0 +1,9 @@
+question number - INT
+question - TEXT
+option 1 - TEXT
+option 2 - TEXT
+option 3 - TEXT
+option 4 - TEXT
+type 
+name - string ("question 1")  - CHAR(10)
+value - CHAR(1)

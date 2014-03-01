@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+        <title> Question to Server</title>
+    </head>
+	<body>
+	<form action="receiveQuestion.php" method="post">
+		Question<input type="text" name="question"><br>
+		qNum<input type="text" name="qNum"><br>
+		Choice A<input type="text" name="a"><br>
+		Choice B<input type="text" name="b"><br>
+		Choice C<input type="text" name="c"><br>
+		Choice D<input type="text" name="d"><br>
+		Answer<input type="text" name="ans"><br>
+		in_type<select>
+		<option value="drop down">drop down</option>
+		<option value="radio">radio</option>
+		<option value="checkBox">checkBox</option>
+		<option value="textField">textField</option>
+		<option value="textArea">textArea</option>
+		</select><br>
+		in_name<input type="text" name="in_name"><br>
+		in_value<input type="text" name="in_value"><br>
+	
+		<p class="submit"><input type="submit" name="sumbit" value="Submit"></p>
+	</form>
+	</body>
+</html>

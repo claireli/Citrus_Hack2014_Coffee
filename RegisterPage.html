@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Register for ThinkBox</title>
+	</head>
+	<div>
+		<div id="header">
+		Welcome to Think Box!<br>
+		</div>
+		<form action="Register.php" method="get">
+			<label for="fName">First Name:</label><input type="text" id="input" name="fName"><br>
+			<label for="lName">Last Name:</label><input type="text" id="input" name="lName"><br>
+			<label for="sid">SID:</label><input type="text" id="input" name="sid"><br>
+			<label for="phone">Phone Number:</label><input type="text" id="input" name="phone"><br>
+			<label for="course">Course Number:</label><input type="text" id="input" name="course"><br>
+		 	<label>&nbsp; </label><input type="submit" value="Submit"id="button"><input type="submit" value="Cancel" id="button" /><br>
+		</form>
+	</div>	
+</html>
+
+<style>
+	#header{
+		width: 200px;
+		margin: 2px 4px 6px 150px;
+	}
+	#input{
+		border:2px solid #006;
+		background:#ffc;
+	}
+	#input:hover{
+		border:1px solid #006;
+		background: #ffb;
+	}
+	#button{
+		border:2px solid #006;
+		background:#xffc;
+	}
+	#button:hover{
+		border:none;
+		padding: 2px 8px;
+		background: #xff6
+	}
+	label{
+		display: block;
+		width: 150px;
+		float: left;
+		margin: 2px 4px 6px 4px;
+		text-align: right;
+	}
+	br{clear:left;}
+</style>

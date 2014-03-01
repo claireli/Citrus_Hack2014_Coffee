@@ -1,0 +1,27 @@
+#box{
+	width: 465px;
+	height: 600px;
+	border: 1px;
+	border-style: solid;
+	background-image:url('HomeBackground.png');
+}
+#button{
+	width:375px;
+	height:75px;
+	border: 2px;
+	border-style: solid;
+	margin: 5px;
+	background-color: #a3ffd7;
+	font-size: 20px;
+
+}
+
+#anchor{
+	border: 1px;
+	border-style: solid;
+	position: absolute;
+	width: 465px;
+	top: 330px;
+	left: 9px;
+	
+}

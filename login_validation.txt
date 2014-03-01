@@ -1,0 +1,20 @@
+int i = 0;
+while(i < login.size())
+{
+	if(login[i].username == username)
+	{
+		if(login[i].password == password)
+		{
+			//login successful
+		}
+		else 
+		{
+			cout << "Invalid username or password" << endl;
+			goto login.html;
+		}	
+	}
+	else 
+	{ ++i; }
+}
+cout << "Invalid username or password" << endl;
+goto login.html;

@@ -12,8 +12,7 @@ Kevin Hsieh (Pineapple_man)<br>
 Michael Uy (hackergirl001)<br>
 Rachel Law (Lord Helix)<br>
 David Anderson (Droust)<br>
-Kevin Chan (Chanchan)<br>
-Cassandra Garner (havenotdecidedyet)<br>
+Nick Barrett
 
 <br>
 

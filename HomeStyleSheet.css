@@ -5,13 +5,14 @@
 	border-style: solid;
 	background-image:url('HomeBackground.png');
 }
-#button{
+.button{
 	width:375px;
 	height:75px;
-	border: 2px;
-	border-style: solid;
+	border: 10px;
+	border-style: outset;
 	margin: 5px;
 	background-color: #a3ffd7;
+	border-color:ade5ff;
 	font-size: 20px;
 
 }

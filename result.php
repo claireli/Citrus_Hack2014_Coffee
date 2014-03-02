@@ -77,7 +77,7 @@ else
 mysql_close($con);
 */
 ?>
-                <form action="result.php" method="post">
+                <form action="questionv2.html" method="post">
                     <p class="submit"><input type="submit" name="commit" value="Ok"></p>
 
                 </form>

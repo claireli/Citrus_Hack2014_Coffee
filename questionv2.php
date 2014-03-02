@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$con = mysql_connect("localhost","root","claire","thoughtbox");
+$con = mysql_connect("localhost","root","","thoughtbox");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
@@ -50,6 +50,7 @@ mysql_close($con);
     <body><div id="box">
         <div class="container">
             <div class ="login">
+            	<a align="left" href="Homepage.html"> <img align="left" src="back_button.png" height=20 width=20> </a> <br>
                 <font size="3"><?php echo $course; ?> - <?php echo $semester; ?></font> <br>
                 <font size="2">Question #<?php echo $qno; ?>
 				<br></font>
@@ -59,7 +60,7 @@ mysql_close($con);
             	<font size="3" style="font-style:italic"><?php echo $question; ?></font>
             </div>
 
-            <div class = "login">                        
+            <div class = "login">                 
                 <form action="result.php" method="post">
 				
                     <input type="radio" name="q" value="a">a. <?php echo $op1; ?> <br>

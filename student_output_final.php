@@ -1,5 +1,5 @@
 <?php
-$con = mysql_connect("localhost","root","","thoughtbox");
+$con = mysql_connect("localhost","root","claire","thoughtbox");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
@@ -21,7 +21,7 @@ if (mysql_query($sql,$con))
 		$op4 = mysql_result($result, $recordNum, 'option4');
 		$in_type = mysql_result($result, $recordNum, 'in_type');
 		$in_name = mysql_result($result, $recordNum, 'in_name');
-		$in_value = mysql_result($result, $recordNum, 'in_value');
+		$answer = mysql_result($result, $recordNum, 'answer');
 
 		echo "Question"; echo $qno; echo "<br>";
 		echo $question; echo "<br>";

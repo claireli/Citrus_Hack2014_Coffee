@@ -1,7 +1,7 @@
 <?php echo "Hello World! This is a test. PHP is working." ?>
 
 <?php 
-$con=mysqli_connect ("localhost","root","","thoughtbox");
+$con=mysqli_connect ("localhost","root","claire","thoughtbox");
 
 //I'm going to put an echo test here to confirm connection!
 
@@ -14,9 +14,18 @@ else {
 }
 
 // Create table
-$sql="CREATE TABLE question(qno INT, subject TINYTEXT, question MEDIUMBLOB, option1 TEXT, option2 TEXT, option3 TEXT, option4 TEXT, in_type TINYTEXT, in_name TINYTEXT, in_value CHAR(1))";
+$sql="CREATE TABLE question(qno INT, course TINYTEXT, semester TINYTEXT, question MEDIUMBLOB, option1 TEXT, option2 TEXT, 
+option3 TEXT, option4 TEXT, in_type TINYTEXT, in_name TINYTEXT, answer CHAR(1))";
 
-
+// Execute query
+if (mysqli_query($con,$sql))
+  {
+  echo "<br>Table persons created successfully";
+  }
+else
+  {
+  echo "<br>Error creating table: " . mysqli_error($con);
+  }
 
 
 

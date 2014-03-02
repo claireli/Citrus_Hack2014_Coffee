@@ -1,7 +1,7 @@
 <?php echo "Hello World! This is a test. PHP is working." ?>
 
 <?php 
-$con=mysqli_connect ("localhost","root","claire","thoughtbox");
+$con=mysqli_connect ("localhost","root","","thoughtbox");
 
 //I'm going to put an echo test here to confirm connection!
 

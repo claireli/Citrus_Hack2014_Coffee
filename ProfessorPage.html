@@ -1,0 +1,39 @@
+<!-- style src, in that style sheet, background, specify it towards a div! -->
+<html>
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="HomeStyleSheet.css">
+		<title>ThinkBox</title>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+		
+		<script>
+
+		$(document).ready(function(){
+  $("#credits").click(function(){
+    $("#anchor").load("Credits.html");
+  });
+});
+		</script>
+	</head>
+	<body>
+		<div id="box">
+			<!--forms--> 
+			<div id="anchor">
+			<div align="center">
+			<a href="QuestionToServer.html"><button type="button" class="button" id="makeQuestions">Make Questions</button></a><br>
+			<a href="FeedbackForm.html"><button type="button" class="button" id="feedback">FeedBack</button></a><br>
+			<button type="button" class="button" id="credits">Credits</button> <br>
+			</div>
+			</div>
+			
+			<!-- AJAX slid in dis part after login sucess
+			<button type="button">Clicker</botton> 
+			<button type="button">Check Scores</botton> 
+			<button type="button">Credit</botton> 
+			-->
+			
+		</div>
+	</body>
+</html>

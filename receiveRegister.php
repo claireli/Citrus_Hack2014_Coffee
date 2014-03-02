@@ -1,3 +1,10 @@
+<html>
+	<head>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+        <title> Question to Server</title>
+    </head>
+	<body>
+
 <?php
 $con=mysqli_connect("localhost","root","","thoughtbox");
 // Check connection

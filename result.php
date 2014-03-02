@@ -1,0 +1,75 @@
+<?php
+session_start();
+$con = mysql_connect("localhost","root","claire","thoughtbox");
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+
+
+//On page 2
+
+$user_answer=$_POST['q'];
+
+$correct=$_SESSION['store'];
+$x=0;
+
+echo "This is the user's answer: ";
+echo $user_answer;
+echo "<br>This is the correct answer: ";
+echo $correct;
+echo "<p>";
+
+if ($user_answer==$correct)
+  {
+  echo "Goodness, you are correct!";
+  $x++;
+  echo "<br>Your current score is:  ";
+  echo $x;
+  }
+else
+  {
+  echo "YO THATS WHACK";
+  echo "<br>Your current score is:  ";
+  echo $x;
+  }
+
+
+/*
+
+$sql1 = "SELECT * FROM thoughtbox.question;";  
+$sql = "SELECT * FROM thoughtbox.score;";
+if (mysql_query($sql,$con))
+  {
+  	//loop~ HEAERRRR
+  	$result = mysql_query($sql);
+  	$recordCount=mysql_num_rows($result);
+  	$x=0;
+		$qno = mysql_result($result, $x, 'qno');
+		$question = mysql_result($result, $x, 'question');
+		$course=mysql_result($result, $x, 'course');
+		$semester=mysql_result($result, $x, 'semester');
+		$op1 = mysql_result($result, $x, 'option1');
+		$op2 = mysql_result($result, $x, 'option2');
+		$op3 = mysql_result($result, $x, 'option3');
+		$op4 = mysql_result($result, $x, 'option4');
+		$in_type = mysql_result($result, $x, 'in_type');
+		$in_name = mysql_result($result, $x, 'in_name');
+		$answer = mysql_result($result, $x, 'answer');
+
+	
+	//the mysql access, the row#, and the field
+  }
+else
+  {
+  echo "Error creating database: " . mysql_error();
+  }
+
+mysql_close($con);
+*/
+?>
+
+
+
+
+

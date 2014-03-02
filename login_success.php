@@ -1,5 +1,5 @@
 <?php
 
-   header( 'Location: questionv2.php' ) ;
+   header( 'Location: ClickerPage.html' ) ;
 
 ?>

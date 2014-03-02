@@ -19,13 +19,12 @@ if($QCount==0){
 }
 
 */
-$query = "SELECT * FROM question";
+/*$query = "SELECT * FROM question";
 $myresult = mysql_query($query);
 if (mysql_num_rows($myresult) > 0) { 
-header('Location: no_clickerq_avail.html');
  echo "Table is not Empty";
 }
-else header('Location: no_clickerq_avail.html');
+else header('Location: no_clickerq_avail.html');*/
 
 
 // username and password sent from form 

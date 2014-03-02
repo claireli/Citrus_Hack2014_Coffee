@@ -45,6 +45,7 @@ else
   echo "That is incorrect!";
   echo "<br>Your current score is:  ";
   echo $x;
+  echo "<p>Your attendance has been noted. Thank you for your participation, clicker questions have concluded.";
   }
 
 
@@ -81,7 +82,7 @@ else
 mysql_close($con);
 */
 ?>
-                <form action="questionv3.php" method="post">
+                <form action="homepage.html" method="post">
                     <p class="submit"><input type="submit" name="commit" value="Ok"></p>
 
                 </form>

@@ -9,7 +9,7 @@
 
 <?php
 session_start();
-$con = mysql_connect("localhost","root","","thoughtbox");
+$con = mysql_connect("localhost","root","claire","thoughtbox");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
@@ -81,7 +81,7 @@ else
 mysql_close($con);
 */
 ?>
-                <form action="questionv3.php" method="post">
+                <form action="questionv4.php" method="post">
                     <p class="submit"><input type="submit" name="commit" value="Ok"></p>
 
                 </form>

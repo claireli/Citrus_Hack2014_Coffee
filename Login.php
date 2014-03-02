@@ -1,5 +1,5 @@
 <?php
-
+//header('Location: no_clickerq_avail.html');
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
 $password=""; // Mysql password 
@@ -9,6 +9,24 @@ $tbl_name="login"; // Table name
 // Connect to server and select databse.
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
 mysql_select_db("$db_name")or die("cannot select DB");
+
+//check MySQL for questions, if no questions, go to no_clicker_avail.html
+/*$questStr="select * from question;";
+$source=mysql_query($questStr);
+$QCount=mysql_num_rows($source);
+if($QCount==0){
+	header('Location: no_clickerq_avail.html');
+}
+
+*/
+$query = "SELECT * FROM question";
+$myresult = mysql_query($query);
+if (mysql_num_rows($myresult) > 0) { 
+header('Location: no_clickerq_avail.html');
+ echo "Table is not Empty";
+}
+else header('Location: no_clickerq_avail.html');
+
 
 // username and password sent from form 
 $myusername=$_POST['usr']; 
@@ -34,6 +52,7 @@ if($count==1){
 $_SESSION["myusername"];
 $_SESSION["mypassword"]; 
 header("location:login_success.php");
+//header("Location: no_clickerq_avail.html");
 }
 else {
 echo "Wrong Username or Password";

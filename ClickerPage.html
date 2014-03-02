@@ -4,18 +4,47 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="HomeStyleSheet.css">
 		<title>ThinkBox</title>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+		
+		<script>
+		$(document).ready(function(){
+  $("#login").click(function(){
+    $("#anchor").load("LoginPage.html");
+  });
+});
+
+		$(document).ready(function(){
+  $("#register").click(function(){
+    $("#anchor").load("Register.html");
+  });
+});
+
+		$(document).ready(function(){
+  $("#credits").click(function(){
+    $("#anchor").load("Credits.html");
+  });
+});
+		</script>
 	</head>
 	<body>
 		<div id="box">
-			<!--forms-->
-			
+			<!--forms--> 
 			<div id="anchor">
 			<div align="center">
-			<button type="button" id="button">Clicker</button> 
-			<button type="button" id="button">Check Scores</button> 
-			<button type="button" id="button">Credit</button>
+			
+			<button type="button" class="button" id="clicker">Clicker</button><br>
+			<button type="button" class="button" id="feedback">FeedBack</button> <br>
+			<button type="button" class="button" id="credits">Credits</button> <br>
 			</div>
 			</div>
+			
+			<!-- AJAX slid in dis part after login sucess
+			<button type="button">Clicker</botton> 
+			<button type="button">Check Scores</botton> 
+			<button type="button">Credit</botton> 
+			-->
 			
 		</div>
 	</body>

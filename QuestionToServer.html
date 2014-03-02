@@ -1,26 +1,31 @@
 <!doctype html>
 <html>
 	<head>
+    	<link rel="stylesheet" type="text/css" href="style.css">
         <title> Question to Server</title>
     </head>
 	<body>
 	<form action="receivequestion.php" method="post">
-		Question<input type="text" name="question"><br>
-		qNum<input type="text" name="qNum"><br>
-		Choice A<input type="text" name="a"><br>
-		Choice B<input type="text" name="b"><br>
-		Choice C<input type="text" name="c"><br>
-		Choice D<input type="text" name="d"><br>
-		Answer<input type="text" name="ans"><br>
-		in_type<select name="in_type">
-		<option value="drop down">drop down</option>
-		<option value="radio">radio</option>
-		<option value="checkBox">checkBox</option>
-		<option value="textField">textField</option>
-		<option value="textArea">textArea</option>
-		</select><br>
-		in_name<input type="text" name="in_name"><br>
-		in_value<input type="text" name="in_value"><br>
+    	<div class="login">
+	        <a align="left" href="Homepage.html"> <img align="left" src="back_button.png" height=20 width=20> </a> <br><br>
+        	<font size=6 style="text-align:center;"> Question Form <br> </font><br>
+            Question<input type="text" name="question"><br>
+            qNum<input type="text" name="qNum"><br>
+            Choice A<input type="text" name="a"><br>
+            Choice B<input type="text" name="b"><br>
+            Choice C<input type="text" name="c"><br>
+            Choice D<input type="text" name="d"><br>
+            Answer<input type="text" name="ans"><br>
+            in_type<select name="in_type">
+            <option value="drop down">drop down</option>
+            <option value="radio">radio</option>
+            <option value="checkBox">checkBox</option>
+            <option value="textField">textField</option>
+            <option value="textArea">textArea</option>
+            </select><br>
+            in_name<input type="text" name="in_name"><br>
+            in_value<input type="text" name="in_value"><br>
+        </div>
 	
 		<p class="submit"><input type="submit" name="sumbit" value="Submit"></p>
 	</form>

@@ -2,20 +2,20 @@
 	<head>
 		<title>Register for ThinkBox</title>
 	</head>
-		<form action="HomePage.html">
-			<input type="submit" value="Cancel" id="button"/>
-		</form>
         <div align="center"> Register Here <br></div>
     <div id="slide">  
-		<form action="receiveRegister.php" method="get">
+		<form action="receiveRegister.php" method="POST">
 			<label for="fName">First Name:</label><input type="text" id="input" name="fName"><br>
 			<label for="lName">Last Name:</label><input type="text" id="input" name="lName"><br>
-			<label for="username">Username:</label><input type="text" id="input" name="username"><br>
-			<label for="password">Password:</label><input type="text" id="input" name="password"><br>
+			<label for="username">Username:</label><input type="text" id="input" name="usr"><br>
+			<label for="password">Password:</label><input type="password" id="input" name="ps"><br>
 			<label for="sid">SID:</label><input type="text" id="input" name="sid"><br>
 			<label for="phone">Phone Number:</label><input type="text" id="input" name="phone"><br>
 			<label for="course">Course Number:</label><input type="text" id="input" name="course"><br>
 		 	<label>&nbsp; </label><input type="submit" value="Submit"id="button">
+		</form>
+		<form action="HomePage.html">
+			<label>&nbsp; </label><input type="submit" value="Cancel" id="button"/>
 		</form>
 	</div>	
 </html>

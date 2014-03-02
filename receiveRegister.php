@@ -6,13 +6,24 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-$sql="INSERT INTO login (username, password) VALUES ('$_POST[username]','$_POST[password]')";
+$sql="INSERT INTO login (username, password) VALUES ('$_POST[usr]','$_POST[ps]');";
 
 if (!mysqli_query($con,$sql))
   {
   die('Error: ' . mysqli_error($con));
   }
-echo "1 record added";
+//redirect back a page
 
 mysqli_close($con);
 ?>
+
+<a href="HomePage.html">
+<p id="POOP" class="submit"><input type="submit" name="POOP" value="back to home"></a>
+		
+		
+		</div>
+	
+		
+	</form>
+	</body>
+</html>

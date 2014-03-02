@@ -9,7 +9,7 @@
 
 <?php
 session_start();
-$con = mysql_connect("localhost","root","claire","thoughtbox");
+$con = mysql_connect("localhost","root","","thoughtbox");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());

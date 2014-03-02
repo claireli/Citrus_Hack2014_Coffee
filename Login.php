@@ -2,7 +2,7 @@
 //header('Location: no_clickerq_avail.html');
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
-$password="claire"; // Mysql password 
+$password=""; // Mysql password 
 $db_name="thoughtbox"; // Database name 
 $tbl_name="login"; // Table name 
 

@@ -1,6 +1,15 @@
+<html>
+    <head>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Clicker Question</title>
+    </head>
+    <body><div id="box">
+        <div class="container">
+            <div class = "login">                        
+
 <?php
 session_start();
-$con = mysql_connect("localhost","root","claire","thoughtbox");
+$con = mysql_connect("localhost","root","","thoughtbox");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
@@ -68,8 +77,14 @@ else
 mysql_close($con);
 */
 ?>
+                <form action="result.php" method="post">
+                    <p class="submit"><input type="submit" name="commit" value="Ok"></p>
 
-
-
+                </form>
+				</div>
+            </div>                      
+        </div>
+     </body>
+</html>
 
 

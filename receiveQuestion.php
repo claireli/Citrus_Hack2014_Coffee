@@ -13,7 +13,16 @@ if (!mysqli_query($con,$sql))
   {
   die('Error: ' . mysqli_error($con));
   }
-echo "1 record added";
+<html>
+	<head>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+        <title> Question to Server</title>
+    </head>
+    <body>
+    	<p>Question Updated to Server!</p>
+    </body>
+</html>
+
 
 mysqli_close($con);
 ?>

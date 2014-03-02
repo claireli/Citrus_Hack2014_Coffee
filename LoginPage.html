@@ -1,9 +1,12 @@
 <html>
 	<div id="slide">
-		<form action="Login.php" method="get">
+		<form name="login" action="Login.php" method="POST">
 			<label for="name">Username:</label><input type="text" id="input" name="usr"><br>
 			<label for="password">Password:</label><input type="password" id="input" name="pw"><br>
-		    <label>&nbsp; </label><input type="submit" value="Submit"id="button"><input type="submit" value="Cancel" id="button" /><br>
+		    <label>&nbsp; </label><input type="submit" value="Submit" id="button">
+		</form>
+		<form action="HomePage.html">
+			<input type="submit" value="Cancel" id="button" /><br>
 		</form>
 	</div>
 </html>

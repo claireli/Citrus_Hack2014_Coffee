@@ -21,7 +21,7 @@ $mail = new SendGrid\Email();
 $mail->addTo($input)->
        setFrom('rlaw1294@gmail.com')->
        setSubject('Here are your test results')->
-       setText('Question1: What is one difference between a High Level Language (HLL) like C++ and an Assembly Language (AL)?<br>
+       setHtml('Question1: What is one difference between a High Level Language (HLL) like C++ and an Assembly Language (AL)?<br>
 	   		Your Answer:<br>
 	   		Correct Answer: A single HLL statement might compile to many Machine Language instructions, while each AL instruction assembles to a single Machine Language instruction.<br>
 	   		Question2: The LC-3 AL program you wrote in lab1 multiplied a number stored in a register by the constant 6. Which of the following best describes the algorithm used?<br>

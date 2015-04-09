@@ -6,7 +6,7 @@ require_once '/smtpapi-php-master/lib/Smtpapi.php';
 SendGrid::register_autoloader();
 Smtpapi::register_autoloader();
 
-$sendgrid = new SendGrid('rlaw1294', 'trouble123');
+$sendgrid = new SendGrid('username', 'password');
 
 $mail = new SendGrid\Email();
 $mail->addTo('khsie003@ucr.edu')->
